@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build:
+      context: ../ # Point to the parent directory of .devcontainer
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../:/workspace # Mount the parent directory to /workspace in the container
+    command: sleep infinity
