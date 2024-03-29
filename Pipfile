@@ -5,6 +5,12 @@ name = "pypi"
 
 [packages]
 transformers = "*"
+ipykernel = "*" 
+requests = "*"
+openai = "*"
+python-dotenv = "*"
+torch = {index = "pytorch",version = "*"}
+
 
 [dev-packages]
 jupyter = "*"
